@@ -25,104 +25,150 @@
 </div> 
 <!--navbar-->
 <div class="row">
-<nav class="navbar navbar-default" id="menu">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    
-                    <a href="/hasiera.html" class="navbar-brand"><span class="glyphicon glyphicon-home"> FPZornotza</a>
-                </div><!-- Navbar Header -->
-                <div class="collapse navbar-collapse" id="navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="/proyectos.html"><span class="glyphicon glyphicon-education"> proyectos</a></li>
-                        <li><a href="/inscripcion.html"><span class="glyphicon glyphicon-pencil"> inscripcion</a></li>
-
-                    </ul>
-                </div>
-            </div><!-- End Container -->
-        </nav><!-- End Navbar -->
+    <nav class="navbar navbar-default" id="my-navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                </button>
+                <a href="" class="navbar-brand">FPZornotza</a>
+            </div><!-- Navbar Header -->
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="hasiera.html"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
+                    <li><a href="proyectos.html"><span class="glyphicon glyphicon-send"></span> Proyectos</a></li>
+                    <li><a href="inscripcion.html"><span class="glyphicon glyphicon-pencil"></span> Inscripción</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle glyphicon glyphicon-education" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Formación<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="formacion.html#section1">FP Iformatica</a></li>
+                            <li><a href="formacion.html#section2">FP Administracion</a></li>
+                            <li><a href="formacion.html#section3">FP Turismo</a></li>
+                            <li><a href="formacion.html#section4">FP Marketing</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 </div>
 <!--siquiente linea, tendra un slider y unos acordion-->
-    <div class="row">
-        <!--parte izquierda-->
-        <div class="col-md-6 col-xs-8" >   
-            <div class="container">
-                <div class="carousel slide" id="fpzornotza" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#fpzornotza" data-slide-to="0" class="active"></li>
-                        <li data-target="#fpzornotza" data-slide-to="1"></li>
-                        <li data-target="#fpzornotza" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img class="img-rounded" src="img/1.jpg" alt="0">
+<div class="container">
+            <div class="carousel slide col-md-8" id="zubiri-fotos" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#zubiri-fotos" data-slide-to="0" class="active"></li>
+                    <li data-target="#zubiri-fotos" data-slide-to="1"></li>
+                    <li data-target="#zubiri-fotos" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img class="img-rounded" src="img/1.jpg" >
+                    </div>
+                    <div class="item">
+                        <img class="img-rounded" src="img/2.jpg">
+                    </div>
+                    <div class="item">
+                        <img class="img-rounded" src="img/3.jpg">
+                    </div>
+                </div><!-- End carousel-inner -->
+            </div><!-- End Carousel -->
+            
+            <!-- tablon accordion -->
+            <div class="panel-group col-md-4" id="accordion">
+                <h4>Tablón</h4>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <a href="#collapse-1" data-toggle="collapse" data-parent="#accordion">Noticias frescas</a>
+                        </div><!-- end panel-title -->
+                        <div id="collapse-1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>
+                                Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                                It has roots in a piece of classical Latin literature from 45 BC, making 
+                                it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney 
+                                ollege in Virginia, looked up one of the more obscure Latin words, consectetur, 
+                                from a Lorem Ipsum passage, and going through the cites of the word in classical 
+                                literature, discovered the undoubtable source. Lorem Ipsum comes from sections 
+                                1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and 
+                                vil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics,
+                                very popular during the Renaissance. The first line of Lorem Ipsum, 
+                                "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                                </p>
+                            </div><!-- end panel-body -->
                         </div>
-                        <div class="item">
-                            <img class="img-rounded" src="img/2.jpg" alt="1">
+                    </div><!-- end panel-heading -->
+                </div><!-- end panel-default -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <a href="#collapse-2" data-toggle="collapse" data-parent="#accordion">Texto generado</a>
+                        </div><!-- end panel-title -->
+                        <div id="collapse-2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>
+                                Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                                It has roots in a piece of classical Latin literature from 45 BC, making 
+                                it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney 
+                                ollege in Virginia, looked up one of the more obscure Latin words, consectetur, 
+                                from a Lorem Ipsum passage, and going through the cites of the word in classical 
+                                literature, discovered the undoubtable source. Lorem Ipsum comes from sections 
+                                1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and 
+                                vil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics,
+                                very popular during the Renaissance. The first line of Lorem Ipsum, 
+                                "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                                </p>
+                            </div><!-- end panel-body -->
                         </div>
-                        <div class="item">
-                            <img class="img-rounded" src="img/3.jpg" alt="2">
+                    </div><!-- end panel-heading -->
+                </div><!-- end panel-default -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <a href="#collapse-3" data-toggle="collapse" data-parent="#accordion">de forma automatica</a>
+                        </div><!-- end panel-title -->
+                        <div id="collapse-3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>
+                                Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                                It has roots in a piece of classical Latin literature from 45 BC, making 
+                                it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney 
+                                ollege in Virginia, looked up one of the more obscure Latin words, consectetur, 
+                                from a Lorem Ipsum passage, and going through the cites of the word in classical 
+                                literature, discovered the undoubtable source. Lorem Ipsum comes from sections 
+                                1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and 
+                                vil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics,
+                                very popular during the Renaissance. The first line of Lorem Ipsum, 
+                                "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                                </p>
+                            </div><!-- end panel-body -->
                         </div>
-                    </div><!-- End carousel-inner -->
-                </div><!-- End Carousel -->
-            </div><!-- End Container -->
-        </div> 
-        <!--parte derecha-->
-        <div class="col-md-6 col-xs-8" > 
-            <div class="container">
-                <section>
-                    <div class="page-header" id="centro">
-                        <h2>Tablon </h2>
-                    </div><!-- end page header -->
-                    <div class="panel-group" id="accordion">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <div class="panel-title">
-                                    <a href="#collapse-1" data-toggle="collapse" data-parent="#accordion">Noticia</a>
-                                </div><!-- end panel-title -->
-                                <div id="collapse-1" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                                        when an unknown printer took a galley of type and scrambled it to make a type 
-                                        specimen book. It has survived not only five centuries, but also the leap into 
-                                        electronic typesetting, remaining essentially unchanged. It was popularised in 
-                                        the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-                                        and more recently with desktop publishing software like Aldus PageMaker including 
-                                        versions of Lorem Ipsum.</p>
-                                        
-                                    </div><!-- end panel-body -->
-                                </div>
-                            </div><!-- end panel-heading -->
-                        </div><!-- end panel-default -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <div class="panel-title">
-                                    <a href="#collapse-2" data-toggle="collapse" data-parent="#accordion">Lorem ipsum</a>
-                                </div><!-- end panel-title -->
-                                <div id="collapse-2" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                                        when an unknown printer took a galley of type and scrambled it to make a type 
-                                        specimen book. It has survived not only five centuries, but also the leap into 
-                                        electronic typesetting, remaining essentially unchanged. It was popularised in 
-                                        the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-                                        and more recently with desktop publishing software like Aldus PageMaker including 
-                                        versions of Lorem Ipsum.</p>
-                                    </div><!-- end panel-body -->
-                                </div>
-                            </div><!-- end panel-heading -->
-                        </div><!-- end panel-default -->
-                    </div><!-- end panel-group -->
-                </section>
-            </div><!-- end container -->
-        </div>
-    </div>
+                    </div><!-- end panel-heading -->
+                </div><!-- end panel-default -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <a href="#collapse-4" data-toggle="collapse" data-parent="#accordion">mas texto</a>
+                        </div><!-- end panel-title -->
+                        <div id="collapse-4" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>
+                                Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                                It has roots in a piece of classical Latin literature from 45 BC, making 
+                                it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney 
+                                ollege in Virginia, looked up one of the more obscure Latin words, consectetur, 
+                                from a Lorem Ipsum passage, and going through the cites of the word in classical 
+                                literature, discovered the undoubtable source. Lorem Ipsum comes from sections 
+                                1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and 
+                                vil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics,
+                                very popular during the Renaissance. The first line of Lorem Ipsum, 
+                                "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                                </p>
+                            </div><!-- end panel-body -->
+                        </div>
+                    </div><!-- end panel-heading -->
+                </div><!-- end panel-default -->
+            </div><!-- end panel-group -->
+        </div><!-- End Container -->
     <div class="row">
             <div class="col-md-12">
             <img class="img-responsive" src="img/footer.jpg"/>
